@@ -1,6 +1,6 @@
 //Функция для проверки длины строки
-function checkStringLength (string, maxlength) {
-  return string.length <= maxlength;
+function checkStringLength (string, maxLength) {
+  return string.length <= maxLength;
 }
 
 //Пример проверки
@@ -11,7 +11,7 @@ function checkPalindrom (string) {
   const normalizedString = string.replaceAll(' ', '').toLowerCase();
   let reverseString = '';
 
-  for (let i = normalizedString.length - 1; i >= 0; i = i - 1) {
+  for (let i = normalizedString.length - 1; i >= 0; i = i--) {
     reverseString += normalizedString.at(i).toLowerCase();
   }
   return (reverseString === normalizedString) ? 'Это палиндром' : 'Это не палиндром';
