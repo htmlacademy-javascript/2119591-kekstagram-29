@@ -11,7 +11,7 @@ function checkPalindrom (string) {
   const normalizedString = string.replaceAll(' ', '').toLowerCase();
   let reverseString = '';
 
-  for (let i = normalizedString.length - 1; i >= 0; i = i--) {
+  for (let i = normalizedString.length - 1; i >= 0; i--) {
     reverseString += normalizedString.at(i).toLowerCase();
   }
   return (reverseString === normalizedString) ? 'Это палиндром' : 'Это не палиндром';
